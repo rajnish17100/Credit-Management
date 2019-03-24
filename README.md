@@ -12,7 +12,7 @@ Transfer Credit > Select user to transfer to > View all Users.
 ** No Login Page. No User Creation. Only transfer of credit between multiple users.
 
 
-#code for creating a table named as user
+# sql code for creating a table named as user
 
 CREATE TABLE `creditmanagement`.`user` ( 
 `user_id` INT(3) NOT NULL AUTO_INCREMENT ,
@@ -24,3 +24,14 @@ CREATE TABLE `creditmanagement`.`user` (
 PRIMARY KEY (`user_id`)
 ) ENGINE = InnoDB;
 
+
+#sql code for creating a table named as transfer
+
+CREATE TABLE `creditmanagement`.`transfer` (
+`transfer_id` INT(11) NOT NULL AUTO_INCREMENT ,
+`sender_username` VARCHAR(60) NOT NULL ,
+`receiver_username` VARCHAR(60) NOT NULL ,
+`credit_amount` INT(11) NOT NULL , 
+`transfered_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+PRIMARY KEY (`transfer_id`)
+) ENGINE = InnoDB;
