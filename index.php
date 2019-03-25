@@ -23,11 +23,9 @@ mysqli_close($conn);
       <tr>
         <th>User Id</th>
         <th>Username</th>
-        <th>FirstName</th>
-		<th>LastName</th>
-		<th>Email</th>
+        
 		<th>Current Credit</th>
-		<th>operation</th>
+		<th>view</th>
       </tr>
     </thead>
     <tbody>
@@ -35,11 +33,9 @@ mysqli_close($conn);
 	  <tr>
         <td><?php echo $row['user_id'];?></td>
         <td><?php echo $row['username'];?></td>
-		<td><?php echo $row['firstname'];?></td>
-		<td><?php echo $row['lastname'];?></td>
-		<td><?php echo $row['email'];?></td>
+		
 		<td><?php echo $row['current_credit'];?></td>
-		<td><a href="transfer.php">Transfer credit</a></td>
+		<td><a href="view.php?id=<?php echo($row['user_id']);?>">View User</a></td>
       </tr>
       
       <?php endforeach;?>
