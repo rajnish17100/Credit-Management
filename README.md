@@ -1,4 +1,4 @@
-#Read About Output buffering......If anywhere you get the error like headers can not be send...the add one function in you php Script
+#Read About Output buffering......If anywhere you get the error like headers can not be send...then add one function in your php Script
 #ob_start(); 
 
 # Credit-Management
