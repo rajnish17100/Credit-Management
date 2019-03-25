@@ -1,3 +1,6 @@
+#Read About Output buffering......If anywhere you get the error like headers can not be send...the add one function in you php Script
+#ob_start(); 
+
 # Credit-Management
 In this project we will Create a simple dynamic website which has the following specs.
 **Start with creating dummy data in database for upto 10 users.
